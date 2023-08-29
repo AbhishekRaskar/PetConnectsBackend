@@ -19,7 +19,7 @@ ShelterRouter.get("/", async (req, res) => {
     }
     if (location) {
       filteredData = filteredData.filter(
-        (pet) => pet.location.toLowerCase() === location.toLowerCase()
+        (pet) => pet.location === location
       );
     }
     //  Sorting the Data
