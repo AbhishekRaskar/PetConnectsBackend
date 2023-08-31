@@ -89,7 +89,7 @@ PetRouter.get("/", async (req, res) => {
     // Paginating data
 
     const currentPage = parseInt(page) || 1;
-    const limitPerPage = parseInt(limit) || 10;
+    const limitPerPage = parseInt(limit) || 8;
     const startIndex = (currentPage - 1) * limitPerPage;
     const endIndex = currentPage * limitPerPage;
     const paginatedData = filteredData.slice(startIndex, endIndex);
